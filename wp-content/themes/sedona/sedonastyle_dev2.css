@@ -1,0 +1,121 @@
+.post_content { 
+	font-size: 13px;
+}
+.lead {
+	clear: both;
+	font-size: 13px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.modal.fade.in {
+	top: 10% !important;
+}
+.modal-body {
+	background: #f5dcc2;
+}
+div.modal-body ul {
+	margin: 0 0 0 1em;
+}
+.gMapsDirs {
+/*	float: right;
+ *		margin: -10em 6em 0 0em;*/
+}
+span.tel form {
+	margin: -1em 0 0 27em !important;
+}
+.row-fluid .span8 {
+	padding: 0 !important;
+}
+
+.menu-main-menu-container {
+	font-size: 12px;
+}
+.menu-main-menu-container a:hover;{
+	text-decoration: underline;
+}
+ul#menu-main-menu-1.menu li {
+line-height: 2em;
+}
+ul#menu-main-menu-1.menu li a:hover {
+	text-decoration: underline;
+}
+.navbar .brand {
+	border-right: 7px solid #f37c20;
+	width: 131px;
+}
+.entry-content, .entry-summary {
+width: 77%;
+float: left;
+font-weight: 300;
+font-size: 13px;
+margin: 1em 0 0 3em;
+}
+
+header.html5er {
+	display:none;}
+
+.navbar .btn-navbar {
+	background: #000;
+}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+	background: #464646;
+}
+
+h2.address {
+	clear: none;
+	float: right;
+	line-height: 1em;
+	position: relative;
+	right: 69px;
+	top: 70px;
+}
+.tel {
+	margin: 0 0 0 1em;
+}
+
+.gform_wrapper textarea, .gform_wrapper input[type=text], .gform_wrapper input[type=url], .gform_wrapper input[type=email], .gform_wrapper input[type=tel], .gform_wrapper input[type=number], .gform_wrapper input[type=password] {
+	font-size: 1em;
+}
+
+.gform_wrapper span.gform_description {
+	font-size: 13px;
+}
+
+h3.gform_title {
+	font-size: 17px !important;
+}
+.gfield_label {
+	font-size: 13px;
+}
+
+.gMapsSmall {
+	display: none;
+}
+@media screen and (max-width : 770px) {
+	header.html5er {
+		display:block;}
+	.row-fluid .span8 {
+		padding: 0 2em 0 2em;
+	}
+	.modal.fade.in {
+		top: 40% !important;
+	}
+	.gMapsSmall {
+		display: block;
+	}
+	.gMapsBig {
+		display: none;
+	}
+}
+@media screen and (min-width : 771px) {
+	
+	.modal.fade.in {
+		top: 40% !important;
+	}
+}
+@media screen and (max-width : 480px) {
+
+}
+
+
+/* The End */

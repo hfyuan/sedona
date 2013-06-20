@@ -1,0 +1,1789 @@
+/*
+Theme Name: Sedona Bootstrap
+Theme URI: http://320press.com/wpbs
+Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
+Version: 2.1
+Author: 320press
+Author URI: http://320press.com
+Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
+License: GNU General Public License v2.0 & Apache License 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+/* micro clearfix: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* wp-specific classes */
+.wp-caption{
+	
+}
+
+.wp-caption-text{
+	
+}
+
+.sticky{
+	
+}
+
+.gallery-caption{
+	
+}
+
+/* layout */
+
+body{
+	padding-top: 0;
+}
+
+/* Admin Top Navigation fixes */
+
+body.admin-bar .navbar-fixed-top{ 
+	top: 28px; 
+}
+
+.navbar .brand{
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+	font-weight: bold !important;
+}
+
+.nav-container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#inner-header{
+	width: 100%;
+}
+
+input, textarea, select, .uneditable-input {
+	margin-bottom: 0;
+}
+
+.navbar-form, .navbar-search {
+	margin: 0 0 9px;
+}
+
+.navbar-search{
+	padding-left: 0;
+}
+
+#Stage_sedona-open-banner_1 {margin-top:-20px;}
+
+#s{
+	width: 100px;
+}
+
+#content{
+	padding: 10px 0 0;
+}
+
+.more-link{
+	white-space: nowrap;
+}
+
+.footer-links{
+	float: right;
+	margin-bottom: 18px;
+}
+
+.footer-links .menu{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.footer-links .menu li{
+	float: left;
+	margin-left: 10px;
+}
+
+/* post styling */
+
+#main p.meta{
+	font-style: italic;
+	color: #808080;
+}
+
+#main article{
+	margin-bottom: 18px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 0 0 9px;
+}
+
+#main article footer{
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+	position: relative;
+	min-height: 20px;
+}
+
+#main article footer a.edit-post{
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.post:hover a.edit-post{
+	display: inline;
+}
+
+p.tags{
+	line-height: 20px;
+}
+
+div[id*='attachment_']{
+	max-width: 100%;
+	height: 100%;
+}
+
+#credit320{
+	background: url('images/320press_mini.png') no-repeat left top transparent;
+	padding-left: 20px;
+}
+
+#main .hero-unit img{
+	margin-bottom: 1em;
+}
+
+#main article img{
+	height: auto;
+	max-width: 100%;
+}
+
+img.alignleft{
+	margin-right: 10px;
+	float: left;
+}
+
+img.alignright{
+	margin-left: 10px;
+	float: right;
+}
+
+img.aligncenter{
+	display: block;
+	margin: 0 auto;
+}
+
+.post header img{
+	margin-bottom: 18px;
+}
+
+.archive #main .post h3{
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrapper {
+	width: 630px;
+	max-width: 100%;
+	margin-bottom: 18px;
+}
+
+/* page styling */
+
+#featured-carousel .item{
+	width: 970px;
+	height: 600px;
+}
+
+.carousel-caption p{
+	display: none;
+}
+
+.page-template-page-homepage-php #main article{
+	border-bottom: none;
+}
+
+.page-template-page-homepage-php .hero-unit,
+.blog .hero-unit{
+	padding: 1em;
+}
+
+.hero-unit h1 {
+	font-size: 3em;
+}
+
+/* comments */
+
+
+
+#comments{
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+
+ol.commentlist,
+ol.commentlist ul.children{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.comment .vcard > div{
+	margin-top: 8px;
+	padding: 0 10px;
+}
+
+ol.commentlist time{
+	font-size: .8em;
+	color: #eeeeee;
+}
+
+ol.commentlist div.comment-author{
+	position: relative;
+}
+
+ol.commentlist a.comment-edit-link{
+	color: #ffffff;
+	text-decoration: none;
+	padding-left: 5px;
+}
+
+ol.commentlist span.edit-comment{
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+ol.commentlist li.bypostauthor{
+	background-color: #dddddd;
+}
+
+ol.commentlist ul.children li{
+	background-color: #cccccc;
+}
+
+ol.commentlist ul.children li ul.children li{
+	background-color: #bbbbbb;
+}
+
+ol.commentlist ul.children li ul.children li ul.children li{
+	background-color: #aaaaaa;
+}
+
+ol.commentlist article{
+	border-bottom: none !important;
+}
+
+a.comment-reply-link{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#comment-nav ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#comment-form-elements{
+	list-style-type: none;
+	margin: 0;
+}
+
+.comment .vcard .avatar{
+	padding-right: 0;
+}
+
+.comment .vcard .comment-text{
+	margin-left: 0;
+}
+
+img.avatar{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-left: 1px solid #ddd;
+	
+}
+
+ol.commentlist li{
+	padding-right: 10px;
+	background-color: #F0F0F0;
+}
+
+#pings{
+	margin-bottom: 9px;
+}
+
+ol.pinglist{
+	list-style-type: none;
+	margin: 0 0 9px 0;
+}
+
+#comment{
+	width: 270px;
+}
+
+ol.commentlist #respond{
+	padding: 5px 10px;
+}
+
+/* specific post-type styles */
+
+/* image attachment */
+
+.attachment #main .post_content img{
+	max-width: 100%;
+}
+
+.ie8 #main .media-grid img{
+	max-height: none !important;
+	max-width: none !important;
+}
+
+.attachment-img{
+	margin-bottom: 18px;
+}
+
+.metadata p.alert-message{
+	margin-right: 0;
+	margin-bottom: 18px;
+}
+
+#gallery-nav{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+li.next a, li.previous a{
+	position: relative;
+}
+
+li.next a:hover:before{
+	content: "\2190";
+	position: absolute;
+	display: block;
+	top: 42%;
+	left: 0;
+	background-color: #BFBFBF;
+	color: #444;
+	width: 20px;
+	height: 20px;
+	padding-left: 5px;
+	text-decoration: none;
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+li.previous a:hover:before{
+	content: "\2192";
+	position: absolute;
+	display: block;
+	top: 42%;
+	right: 0;
+	background-color: #BFBFBF;
+	color: #444;
+	width: 20px;
+	height: 20px;
+	padding-left: 5px;
+	text-decoration: none;
+	box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+
+/* widget styles */
+
+.widget{
+	margin-bottom: 18px;
+}
+
+.widgettitle{
+	margin-bottom: 9px;
+}
+
+#tag-cloud{
+	margin-bottom: 18px;
+	line-height: 160%;
+}
+
+/* for some reason the bs version currently available for download doesn't have this style */
+.label{
+	text-transform: uppercase;
+}
+
+/* override standard link hover for the tag cloud widget */
+#tag-cloud a:hover,
+.tags a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#tag-cloud a{
+	white-space: pre;
+	text-transform: uppercase;
+}
+
+/* change default form padding for search */
+
+.widget_search form{
+	padding-left: 0;
+}
+
+.widget_search input{
+	width: 121px;
+}
+
+/* calendar widget */
+
+#calendar_wrap{
+	border: 1px solid #ddd;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+#wp-calendar{
+	width: 100%;
+	
+}
+
+#wp-calendar caption{
+	font-weight: bold;
+	padding: 8px;
+}
+
+#wp-calendar tr{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#wp-calendar tr:last-child{
+	border-bottom: none;
+}
+
+#wp-calendar td{
+	text-align: center;
+	padding: 8px 0;
+}
+
+blockquote.pull-left{
+	padding-right: 15px;
+}
+
+/* we add */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0; 
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+input { 
+  padding: 3px;
+}
+
+/*select {
+    padding:20px;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}*/
+
+/* =Global
+----------------------------------------------- */
+body,
+/*button,*/
+input,
+select,
+textarea {
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden; 
+  background-color:#3c3e43;
+  }
+textarea,select {
+  background: #fff;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  color: #bd292c;
+  text-transform: uppercase; }
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #000; }
+
+h2, .gform_wrapper h2 {
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  margin: 1em 0 0 0; }
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+h4 {
+  color: #000;
+  font-weight: bold; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* Text elements */
+p {
+  margin-bottom: 1.5em; }
+  
+ul {
+  list-style: square;
+  list-style-image: url('img/list-box.png');
+}
+
+li.disclaimer { list-style: none; font-size: 75%; font-style: italic; margin: 0 !important; }
+
+/* Links */
+a:link, a:visited {
+  color: #000;
+  text-decoration: none; }
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none; }
+
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+
+/* =Layout
+----------------------------------------------- */
+body {
+  margin: 0 auto;
+  width: 896px;
+}
+header {
+  background: url('img/header-bg.png') 154px 0px repeat;
+  border-bottom: 10px solid #edd3a8;
+  overflow: hidden;
+  padding: 0;
+}
+	nav#switchSite { float: right; position:absolute; right:0;}
+		#switchSite ul { 
+			overflow: hidden;
+			text-indent: -999px;
+			list-style: none 
+			}
+			#switchSite ul li {
+			}
+				#switchSite ul li.sedona { 
+					background: url('img/sedona-sprite.png') -133px -192px no-repeat;
+					
+					height: 50px;
+					width: 63px;
+				 }
+				#switchSite ul li.slate { 
+					background: url('img/sedona-sprite.png') -133px -244px no-repeat;
+					height: 41px;
+					width: 63px;
+				 }
+					#switchSite ul li a{
+						float: left;
+						height: 50px;
+						width: 63px
+					}
+
+#wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+#content {
+  background: #bd292c url('img/bg-left.gif') top left repeat-y;
+  padding: 0;
+	float: left;
+	min-height: 690px;
+	width: 100%;
+	overflow: hidden
+}
+.entry-content {
+  float: left;
+  font-weight: 300;
+  font-size: 13px;
+  margin: 1em 1em 1em 32px;
+  line-height:1.4em;
+}
+.span2 {
+  float: left;
+  width: 178px;
+  margin: 0;
+  padding: 0;
+	margin-bottom: -2000px;
+	padding-bottom: 2000px;
+}
+.span10 {
+  width: 902px; 
+  margin: 0;
+}
+.row-fluid [class*="span"] {
+  margin: 0;
+}
+.one-third {
+  width: 29%;
+  float: left;
+  margin: .5em 1% 0 1em;
+}
+#one-half {
+  max-width: 43%;
+  float: left;
+  margin: .5em 2em 0 1em;
+}
+#grabcontent{
+	float: left;
+	font-weight: 300;
+	font-size: 13px;
+	line-height:1.4em;
+	margin: 0 1em 0 2em;
+}
+	#grabcontent ul { 
+		margin: 1em 1em 1em 1.5em;
+		float: left; 
+		width: 43%; }
+		 #grabcontent  ul > li {
+			 margin: .5em 0;
+		 }
+			#grabcontent p { margin: 1em 0 0 0; }
+			.first {
+			  margin-right: 4em;
+			}
+					ul.first > p { margin: 0; }
+
+
+/* =Header
+----------------------------------------------- */
+
+#logo {
+  background: url("img/sedona-logo.png") 15px -17px no-repeat #bd292c;
+  border-right: 7px solid #f37c20;
+  float: left;
+  width: 171px;
+  height: 81px;
+  margin:0;
+  text-indent:-9990px;
+}
+.navbar {
+  display: none;
+}
+/* ----- UPPER RIGHT ----- */
+#social-media {
+  margin: 20px 70px 0 0;
+  float:right;	
+}
+#social-media > ul{
+  list-style: none;
+}
+	#social-media > ul > li {
+	  float: left;
+	}
+		.icon-facebook {
+		  width: 20px;
+		  height: 20px;
+		  background: url(images/icon-facebook.png) 0 0 no-repeat;
+		  text-indent: 999%;
+		  display: block;
+		}
+		.icon-twitter {
+		  display: block;
+		  width: 20px;
+		  height: 20px;
+		  background: url(images/icon-twitter.png) 0 0 no-repeat;
+		  text-indent: 999%;
+		}
+		
+		.icon-youtube {
+		  display: block;
+		  width: 20px;
+		  height: 20px;
+		  background: url(http://reaserverspace.net/test/TESTmars/slate/wp-content/uploads/sites/3/2013/06/icon-youtube.png) 0 0 no-repeat;
+		  text-indent: 999%;
+		}
+
+#location { clear: right; float: right; margin: .5em 35px 0 0 }
+	#location > ul {
+	  float: right;
+	  margin: 0 4em 0 0;
+	  clear: right;
+	  list-style: none;
+	  color: #bd292c; 
+	  font-size: 11px;
+
+	}
+		#location > ul > li { float: left; margin: 0 0 0 3em }
+	
+
+/* =LEFT Menu
+----------------------------------------------- */
+.menu-main-menu-container { 
+	float: left; 
+}
+#sidenav { float: left; }
+#sidenav ul {
+	list-style: none;
+	margin: 2em 0 0 1.5em;
+}
+#sidenav a{
+  color: rgb(245, 220, 194);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#menu-main-menu-1 li.current_page_item a, #menu-main-menu-1 li.current-menu-item a, #menu-main-menu-1 li.current-menu-parent a {
+  color: #ffd600;
+  font-weight: bold;
+}
+
+
+/* =Lower Menu
+----------------------------------------------- */
+footer ul {
+	list-style: none; 
+}
+.menu-second-menu-container {
+	clear: both; 
+	margin: -9em 0 0 1em;
+	float: left;
+}
+
+#menu-item-641 a {
+	background: url("img/red-orange-bug.png") no-repeat 0 0;
+	text-indent: -999px;
+	position: absolute;
+	top: 660px;
+	left: 146px;
+	width: 53px;
+	height: 90px;
+	display: inline-block;
+	z-index: 9999;
+}
+
+
+#menu-item-1238 a {
+  display: inline-block;
+  width: 100px;
+  height: 28px;
+  background: url("img/sedona-sprite.png") no-repeat 30px -16px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+#menu-item-1281 a {
+display: inline-block;
+width: 100px;
+height: 28px;
+background: url("img/sedona-sprite.png") no-repeat 30px -76px;
+text-indent: -999px;
+overflow: hidden;
+}
+
+#menu-item-640 a {
+display: inline-block;
+cursor: default;
+width: 100px;
+height: 28px;
+background: url("img/sedona-sprite.png") no-repeat 30px -136px;
+text-indent: -999px;
+overflow: hidden;
+}
+
+#menu-item-1282 a {color:#ffffff;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  float:left;
+  font-size:11px;
+  margin-left:10px;
+}
+
+  
+/* =Things
+----------------------------------------------- */
+span.title, small { display: none; } /* gMaps hacks */
+select {
+display: inline-block;
+height: 28px;
+line-height: 28px;
+border: 1px solid #aaa;
+padding: 4px;
+color: #555;
+   }
+.pageTitle {
+    font-size: 16px;
+    color: #fff; 
+    position: absolute;
+    z-index: 1;
+    top: 6em;
+    left: 13em;
+}
+a.button, .gform_footer input[type=submit]{
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f37c20;
+  webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 1; 
+  width: 212px;
+  border:0;
+}
+a.button:hover {
+  color: #ccc; }
+a.button:visited {
+  color: #fff; }
+.post_content {
+  padding: 1em;
+}
+
+
+/* =Contact Form
+----------------------------------------------- */  
+.formName {
+}
+.formEmail {
+  position: relative;
+  left: 50%;
+  top: -55px;
+}
+li#field_1_7.gfield.gfield_error.formEmail.gfield_contains_required {
+  position: relative;
+  left: 0;
+  top: -4px;
+}
+/*----- ROW 2 -----*/
+.formStreetAddress {
+  position: relative;
+  top: -65px;
+}
+.formPhone {
+  position: relative;
+  left: 50%;
+  top: -235px;
+}
+/*----- ROW 3 -----*/
+.formCity {
+  position: relative;
+  top: -75px;
+}
+.formState {
+  position: relative;
+  left: 30%;
+  top: -128px;
+}
+.formZip {
+  position: relative;
+  left: 60%;
+  top: -182px;
+}
+/*----- ROW 4 -----*/
+.formComments {
+    position: relative;
+    top: -190px;
+}
+.formPreferredApt {
+    position: relative;
+    top: -230px;
+}
+.formHowDidYou {
+    position: relative;
+    top: -286px;
+    left: 50%;
+}
+/*----- ROW 4 -----*/
+.formMoveInDate {
+    position: relative;
+    top: -180px;
+}
+.gform_wrapper { height: 530px; }
+/*----- OVERRIDES -----*/
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  margin: 0;
+}
+.gform_wrapper .gfield_description {
+  padding: 0;
+}
+.gform_wrapper .gform_footer {
+  position: relative;
+  top: -18em;
+}
+.gfield_label {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.gform_wrapper ul li:before, .gform_wrapper ul li:after, .gform_wrapper ul.gform_fields {
+  max-width: 500px;
+}
+.ui-datepicker-div, #ui-datepicker-div {
+  font-size: 11px;
+}
+
+.retail-inquiries {
+  float:left;
+}
+
+
+
+/* carousel */
+.carousel-control {
+position: absolute;
+top: 270px;
+left: 15px;
+width: 40px;
+height: 40px;
+font-size: 60px;
+font-weight: 50;
+line-height: 30px;
+color: #ffffff;
+text-align: center;
+background: #ffffff;
+opacity: 0.5;
+filter: alpha(opacity=50);
+z-index: 99;
+}
+.carousel-control.left {
+  left: 194px;
+}
+.carousel-inner strong {
+  font-weight:bold;
+}
+    
+/* hide search */
+.navbar-search {
+  display:none;
+  }
+ 
+
+.gallery-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  background: #fff;
+  color: #000;
+  width: 100%;
+  z-index: 8;
+  font-size: 13px;
+  padding: 5px 30px;
+  font-weight: normal;
+  opacity: 0.45;
+  overflow: hidden;
+}
+.content-caption {
+  position: absolute;
+  bottom: .5em;
+  color: white;
+  font-weight: bold;
+  left: 2em;
+  overflow: hidden;
+  font-size: 15px;
+  text-transform:uppercase;  
+}
+.attribution {
+  display:none;
+}
+#credit320 {
+  display:none;
+}
+.privacy-policy, .equal-housing {
+  font-size:.8em;
+}
+.privacy-policy strong {
+  font-weight:bold; 
+  font-size:.7em;
+}
+.equal-housing strong {
+  font-size:.8em; 
+  font-weight:bold; 
+  margin-top:20px;}
+
+.post_content { 
+  font-size: 13px;
+}
+
+#orange {
+  float: right;
+  margin: 1em;
+}
+#orange ul {
+  list-style: none;
+}
+#orange ul li {
+  margin: 0 0 1em 0;
+}
+.hideBanner { 
+  display: none;
+}
+.mobileHomepage, header[role="mastheadHome"] {
+  display: none;
+}
+
+/*----- HTML5 HOMEPAGE-----*/
+.scaleTheAnimation {
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  -ms-transform: scale(.8);
+  margin: -100px 0 0 -100px;
+}
+
+#directions {
+  float: right;
+  margin: -3em 1em 0 0;
+  clear: right;
+}
+p, #gforms_confirmation_message {
+ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ font-size: 13px;
+ font-style: normal;
+ font-weight: 300;
+ line-height: 1.3em;
+}
+.btn-goback {
+  clear:both;
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f37c20;
+  webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 1;
+  width: 100px;
+  border: 0;
+}
+
+.btn-goback a {
+  color:#fff;
+}
+
+#footernavmobile {
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+	text-align:center;
+	margin: 1em 0;
+	width: 100%;
+	display: none;
+}
+	#footernavmobile ul {
+		list-style: none;
+		margin: .5em 0;
+	}
+		#footernavmobile ul li {
+			margin: 0 0 1em 0;
+		}
+		
+		
+#homeMobile { display: none; text-align: center }
+#grabcontent iframe#snippet_frame{
+	width: 663px
+}
+
+/* =Gallery Page Columns
+----------------------------------------------- */
+#galleryindex {
+  float: left; 
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+	#galleryindex > ul {
+	  list-style: none;
+	  width: 800px
+	}
+		#galleryindex > ul > li {
+		  margin: 1em;
+		  float: left;
+
+		}
+			#galleryindex li a{
+			  color: #fff; 
+			  display: block;
+			  padding: 1em 0 0 1em;
+			  height: 500px;
+			  width: 170px;
+
+			}
+    
+			#residences-gallery-link {
+			      background: url(img/residences-gallery-large.jpg) no-repeat 0; }
+			#amenities-gallery-link {
+			      background: url(img/amenities-gallery-large.jpg) no-repeat 0; }
+			#neighborhood-gallery-link {
+			      background: url(img/neighborhood-gallery-large.jpg) no-repeat 0; }
+
+.span10 { width: 718px; }
+.contact { margin: 0 1em 0 2em; }
+
+/* CLOSE PAGE LAYOUT */
+
+/* ULTRAWIDE DESKTOP LAYOUT 
+----------------------------------------------- */
+
+@media only screen and (min-width: 1176px) {
+
+body { width: 1080px; }
+.span10 { width: 902px; }
+
+.scaleTheAnimation {
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  margin: 0 0 1em 0;
+}
+#grabcontent iframe#snippet_frame{
+	width: 850px
+}
+			#galleryindex li a{
+			  color: #fff; 
+			  display: block;
+			  padding: 1em 0 0 1em;
+			  height: 500px;
+			  width: 220px;
+
+			}
+
+} /* CLOSE WIDE LAYOUT */
+
+
+/* TABLET HI LAYOUT 
+----------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+body {
+  width: 712px;
+  padding: 20px 28px 0;
+}
+.span10 {
+  width: 534px; 
+}
+.scaleTheAnimation {
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+  -ms-transform: scale(.6);
+  margin: -160px 0 0 -125px;
+}
+#grabcontent > ul {
+	width: 90%;
+}
+	#grabcontent > ul.last {
+		margin-top: -1.5em;
+		}
+#grabcontent iframe#snippet_frame{
+	width: 480px
+}
+	#galleryindex > ul {
+		margin: 0;
+		width: 400px
+	}
+		#galleryindex > ul > li {
+		  margin: 0;
+		  float: none;
+
+		}
+			#galleryindex li a{
+			  color: #fff; 
+			  display: block;
+			  padding: 1em 0 0 1em;
+			  height: 500px;
+			  width: 260px;
+				margin: 1em 0;
+				float: left;
+				clear: both
+			}
+			
+.mobStart {
+display:none;
+}			
+
+}
+/* CLOSE TABLET LAYOUT */
+
+
+/* MOBILE LAYOUT (PORTRAIT/320PX) 
+ * ----------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+#homeMobile { display: block; }
+body {
+  background: url(img/home-bg3.png) top left repeat-y  #bd292c;
+  width: 320px;
+  padding: 0;
+}
+.span10 { width: 320px; }
+#content { 
+	background: #f5dcc2; 
+	min-height: 0;
+}
+footer ul {
+	display: none;  
+}
+#footernavmobile > ul { 
+	display: block;
+}
+#grabcontent > ul {
+	width: 90%;
+}
+	#grabcontent > ul.last {
+		margin-top: -1.5em;
+		}
+#menu-item-957 a {
+	display: none;
+}
+.mobileHomepage, header[role="mastheadHome"] {
+  display: block;
+}
+.span2 {
+  display: none !important;
+}
+.row-fluid .span10 {
+  width: 100%;
+}
+#bullets > ul, .one-third, col.one-third {
+  max-width: 100%;
+  width: 90%;
+}
+/*----- HEADER ELEMENTS THAT HIDE -----*/
+
+#location {
+display:none;
+}
+
+#social-media {
+margin: 3em .5em 0 0;
+float: right;
+}
+#animation {display: none;}
+/*----- Gallery Things -----*/
+
+.pageTitle {
+  left: 25px;
+  top: 5em;
+}
+
+/*----- CAROUSEL -----*/
+.carousel-control {
+  top: 170px;
+}
+.carousel-control.left {
+  left: 0;
+}
+.carousel-control.right {
+  right: 0;
+}
+
+/*----- NEIGHBORHOOD PAGE -----*/
+#directions, #orange {
+display: none; 
+}
+
+/* ----- DROP DOWN NAV ---- */
+.navbar .btn-navbar {
+  background: #000;
+}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+  background: #464646;
+}
+.navbar { 
+  display: inline; 
+}
+.navbar .btn-navbar {
+  display: inline;
+  position: absolute;
+  right: 1%;
+}
+.nav-collapse, .nav-collapse.collapse {
+  background: #bd292c;
+  z-index: 444;
+}
+#menu-main-menu a {
+  color: rgb(245, 220, 194);
+  text-shadow:none;
+  font:normal .8em Arial;
+  text-transform:uppercase;
+  background-color:#bd292c;
+} 
+#menu-main-menu a:hover {
+  background-color:#f27c21;
+}     
+#menu-main-menu > .active > a, #menu-main-menu > .active > a:hover, #menu-main-menu > .active > a:focus {
+  box-shadow:none;
+}
+.nav-collapse .nav > li > a {
+padding: 15px 0 0 2em;
+}
+	#galleryindex > ul {
+	  list-style: none;
+	}
+		#galleryindex > ul > li {
+		  margin: 1em;
+		  height: 500px;
+		  width: 180px;
+
+		}
+
+
+
+    /* ----- MOBILE SPLASH PAGE ----- */
+    ul#menu-main-menu {
+     list-style-type: none;
+     margin: 0;
+    }
+    ul#menu-main-menu-1.nav li {
+     background-color:#F9AC1A;
+     border:5px solid #BE2A2C;
+     margin:0 auto 10px;
+     text-align:center;
+     text-transform:uppercase;
+     padding: 1em;
+     width: 50%;
+    }
+    ul#menu-main-menu-1.nav li a {
+      color:#000;
+      font-weight:normal;
+    }
+    ul#menu-main-menu-1.nav li:hover {
+      background-color:#BE2A2C;
+    }
+    ul#menu-main-menu-1.nav li a:hover {
+      background-color:#BE2A2C;
+    }
+    ul#menu-main-menu a {
+      color: #f4dbc2;
+    }
+    #mobileHomepage > .menu-item-8 {
+      display: none;
+    }
+    .mobileHomepage { 
+      display: block;
+    
+      text-align: center;
+}
+    .mobStripes {
+      background: url(img/home-bg3.png) top left repeat-y  #bd292c;   }
+    #Stage_sedona-open-banner_5 {
+      display: none;
+    }
+    .mobStart {
+      width:100%;
+      text-align:center;
+    }
+    .mobStart img {
+      margin: 0 0 1em 0;
+      padding: 1em;
+    }
+	
+#footernavmobile {
+  display:block;
+}	
+
+ #jbg-link  {
+   display: inline-block;
+   width: 60px;
+   height: 28px;
+   background: url("img/sedona-sprite.png") no-repeat 0px -16px;
+   text-indent: -999px;
+   overflow: hidden;
+   
+}
+
+#equal-housing {
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  background: url("img/sedona-sprite.png") no-repeat 0px -80px;
+  text-indent: -999px;
+  overflow: hidden;
+  
+}
+
+#sec508 {
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  background: url("img/sedona-sprite.png") no-repeat 0px -140px;
+  text-indent: -999px;
+  overflow: hidden;
+  
+}
+
+#privacy {
+  color: #ffffff;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 11px;
+  padding-left:20px;
+  clear:both;
+  margin-left:-15px;
+  }
+  
+.gallery-caption {
+  width:88%;
+} 
+
+.just-mobile {
+   margin-top:-20px;
+}
+#grabcontent iframe#snippet_frame{
+	width: 263px
+}
+
+	#galleryindex > ul {
+		margin: 0;
+	}
+		#galleryindex > ul > li {
+		  margin: 0;
+		  float: none;
+
+		}
+			#galleryindex li a{
+			  color: #fff; 
+			  display: block;
+			  padding: 1em 0 0 1em;
+			  height: 500px;
+			  width: 260px;
+				margin: 1em 0;
+				float: left;
+			}
+/* =Contact Form
+----------------------------------------------- */  
+.formName {
+	width: 750px;
+}
+.formEmail {
+  position: relative;
+  left: 0;
+  top: -13px;
+	width: 750px;
+}
+li#field_1_7.gfield.gfield_error.formEmail.gfield_contains_required {
+  position: relative;
+  left: 0;
+  top: -4px;
+}
+/*----- ROW 2 -----*/
+.formStreetAddress {
+  position: relative;
+  top: -20px;
+}
+.formPhone {
+  position: relative;
+  left: 50%;
+  top: -205px;
+}
+/*----- ROW 3 -----*/
+.formCity {
+  position: relative;
+  top: -28px;
+}
+.formState {
+  position: relative;
+  left: 30%;
+  top: -80px;
+}
+.formZip {
+  position: relative;
+  left: 60%;
+  top: -135px;
+}
+/*----- ROW 4 -----*/
+.formComments {
+    position: relative;
+    top: -145px;
+	width: 360px;
+}
+	.ginput_container { width: 77%; }
+.formPreferredApt {
+    position: relative;
+    top: -140px;
+}
+.formHowDidYou {
+    position: relative;
+    top: -256px;
+    left: 0;
+}
+/*----- ROW 4 -----*/
+.formMoveInDate {
+    position: relative;
+    top: -150px;
+}
+.gform_wrapper .gform_footer { top: -13em; } /* heights change */
+.contact { margin: 0 1em 0 1em; } /* no sidebar anymore to linup */
+.retail-inquiries { margin: 0 1em 3em 0; } /* heights change */
+.gform_wrapper { height: 620px; }
+#gforms_confirmation_message { height: 90px; margin: 2em 3em 0 0; }
+
+nav#switchSite, #social-media {display:none;}
+
+#Stage_sedona-open-banner_1 {display:none;}
+
+} /* CLOSE MOBILE LAYOUT */
+
+
+/* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
+----------------------------------------------- */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+body {
+  width: 480px;
+  padding: 0;
+}
+.span10 { width: 480px; }
+
+.carousel-control {
+  top: 200px;
+}
+#grabcontent iframe#snippet_frame{
+	width: 423px
+}
+
+
+
+
+} /* CLOSE WIDE MOBILE LAYOUT */
+@media only screen and (min-width: 768px) {
+	.carousel-caption p{
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	body{
+		padding-top: 0;
+	}
+	
+	html {
+		margin:0 !important;
+	}
+	
+	.container-fluid{
+		max-width: 970px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#inner-footer{
+		padding: 0;
+	}
+	
+	#content{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.topbar-inner{
+		padding: 0;
+	}
+	
+	.topbar form.pull-right {
+		float: right;
+	}
+	
+	.navbar-form, .navbar-search {
+		margin-top: 6px;
+		margin-bottom: 0;
+	}
+	
+	.navbar-search{
+		padding-left: 0;
+	}
+	
+	.sidebar{
+		margin-top: 0 !important;
+	}
+	
+	.widget_search input{
+		width: 230px;
+	}
+	
+	.blog .hero-unit{
+		margin-top: 10px;
+	}
+	
+	.page-template-page-homepage-php .hero-unit,
+	.blog .hero-unit{
+		padding: 60px;
+	}
+	
+	.hero-unit h1 {
+		font-size: 60px;
+	}
+	
+	/* hide edit comment button and show on hover on desktop version */
+	.edit-comment{
+		display: none;
+	}
+	
+	.vcard:hover .edit-comment{
+		display: inline-block;
+	}
+	
+	#s{
+		width: 210px;
+		margin-bottom: 6px;
+	}
+	
+	.widget_search input{
+		width: 209px;
+	}
+	
+	.comment .vcard .comment-text{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+.mobStart {
+display:none;
+}
+	
+}

@@ -1,0 +1,13 @@
+/*base styles
+*/
+body {
+	background: #3c3e43;
+}
+#Stage {
+	background: url(images/stripes.png) no-repeat; 
+	margin: 0 auto;
+}
+.zeroOut {
+	display: inline !important;
+	background-position: 0 -388px !important;
+}

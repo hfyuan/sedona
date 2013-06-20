@@ -1,0 +1,2 @@
+[01-May-2013 16:34:29] PHP Parse error:  syntax error, unexpected $end in /home/rea/public_html/test/TESTmars/wp-content/themes/sedona/soap-login.php on line 25
+[01-May-2013 16:36:27] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/rea/public_html/test/TESTmars/wp-content/themes/sedona/soap-login.php on line 21
